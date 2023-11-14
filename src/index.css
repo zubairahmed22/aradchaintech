@@ -59,9 +59,14 @@ h2 {
   border-radius: 4px;
   padding: 5px 20px;
   color: #a7a5a5 !important;
+  background-color: #ffffff !important;
   /* border: none; */
   line-height: 50px;
   /* border: 1px solid transparent; */
+}
+.account-form .form-group .checkgroup label {
+  margin: 0;
+  color: #1a202c !important;
 }
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
   color:    rgb(53, 49, 53) !important;
