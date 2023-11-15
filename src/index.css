@@ -198,7 +198,7 @@ body {
   background-color: black;
 }
 img {
-  max-width: 90%;
+  max-width: 89%;
   height: auto;
 }
 .header-section {
@@ -251,6 +251,18 @@ input.btn.btn-primary.px-4 {
 }
 .me-2 {
   margin-right: .5rem!important;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .menu > li > a {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 550;
+    padding: 15px 22px;
+    font-family: 'Gordita ';
+    text-transform: capitalize;
+  }
 }
 
 

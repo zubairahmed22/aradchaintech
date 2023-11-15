@@ -1,7 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react';
+
 import { Link } from 'react-router-dom'
 
-const header = () => {
+const HeaderComponent = () => {
+
+
+
+    const [isOpen, setIsOpen] = useState(false)
+
   return (
     <header className="header-section">
         <div className="container">
@@ -19,7 +25,7 @@ const header = () => {
                             <a href="index.html"><img src="assets/images/logo/aradchain_logo.png" alt="logo"/></a>
                         </div>
                         <div className="menu-area">
-                            <ul className="menu">
+                            <ul className={isOpen?"menu active" : "menu"}>
                                 <li>
                                     <Link to={'/'}>Home</Link>
                                     
@@ -41,12 +47,15 @@ const header = () => {
                                 </li>
                                 
                             </ul>
-                            <a className="wallet-btn" href="#" data-bs-toggle="modal" data-bs-target="#wallet-option">
-                                Contact
-                           </a>
+                            
+                            <a className="wallet-btn" data-bs-toggle="modal" data-bs-target="#wallet-option">
+                            
+                              <span >
+                              Contact
+                              </span> <i className='fas fa-solid fa-wallet'></i></a>
 
                             
-                            <div className="header-bar d-lg-none">
+                            <div className={isOpen? "active  header-bar d-lg-none" : "header-bar d-lg-none"} onClick={() => setIsOpen(!isOpen)}>
                                 <span></span>
                                 <span></span>
                                 <span></span>
@@ -62,4 +71,4 @@ const header = () => {
   )
 }
 
-export default header
+export default HeaderComponent
