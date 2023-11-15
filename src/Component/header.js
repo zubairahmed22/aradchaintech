@@ -26,13 +26,10 @@ const HeaderComponent = () => {
                         </div>
                         <div className="menu-area">
                             <ul className={isOpen?"menu active" : "menu"}>
-                                <li>
-                                    <Link to={'/'}>Home</Link>
-                                    
-                                </li>
+                               
                              
                                 <li>
-                                    <Link to={'/profile'}>profile</Link>
+                                    <Link to={'/'}>profile</Link>
                                     
                                 </li>
                                
