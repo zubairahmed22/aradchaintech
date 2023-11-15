@@ -28,16 +28,16 @@ const HeaderComponent = () => {
                             <ul className={isOpen?"menu active" : "menu"}>
                                
                              
-                                <li>
+                                <li onClick={() => setIsOpen(false)} >
                                     <Link to={'/'}>profile</Link>
                                     
                                 </li>
                                
-                                <li>
+                                <li onClick={() => setIsOpen(false)}>
                                     <Link to={"/login"}>login</Link>
                                     
                                 </li>
-                                <li>
+                                <li onClick={() => setIsOpen(false)}>
                                     <Link to={"/sginUp"}>register</Link>
       
                                     
