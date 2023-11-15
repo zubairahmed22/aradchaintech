@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 const login = () => {
   return (
@@ -23,7 +24,7 @@ const login = () => {
                                 <input type="checkbox" name="remember" id="remember"/>
                                 <label for="remember">Remember Me</label>
                             </div>
-                            <a href="reset-pass.html">Forget Password?</a>
+                            
                         </div>
                     </div>
                     <div className="form-group">
@@ -31,8 +32,8 @@ const login = () => {
                     </div>
                 </form>
                 <div className="account-bottom">
-                    <span className="d-block cate pt-10">Don’t Have any Account? <a href="signup.html"> Sign
-                            Up</a></span>
+                    <span className="d-block cate pt-10">Don’t Have any Account? <Link to={"/sginUp"}> Sign
+                            Up</Link></span>
                   
                 </div>
             </div>

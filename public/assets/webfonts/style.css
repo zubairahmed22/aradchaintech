@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Gordita ';
+    src: local('Gordita  Bold'), local('Gordita--Bold'),
+        url('Gordita-Bold.woff2') format('woff2'),
+        url('Gordita-Bold.woff') format('woff'),
+        url('Gordita-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+  }

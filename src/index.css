@@ -12,20 +12,43 @@
     monospace;
 } */
 @font-face {
-  font-family: 'OpenSans';
-  src: local('OpenSans'), url("../public/assets/webfonts/OpenSans-Regular.ttf") format('opentype');
+  font-family: 'Gordita ';
+  src: local("Gordita, Regular"), local('Gordita--Regular'),
+      url('../public/assets/webfonts/Gordita-Regular.woff2') format('woff2'),
+      url('../public/assets/webfonts/Gordita-Regular.woff') format('woff'),
+      url('../public/assets/webfonts/Gordita-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
 }
-
+@font-face {
+  font-family: 'Gordita ';
+  src: local('Gordita  Bold'), local('Gordita--Bold'),
+      url('../public/assets/webfonts/Gordita-Bold.woff2') format('woff2'),
+      url('../public/assets/webfonts/Gordita-Bold.woff') format('woff'),
+      url('../public/assets/webfonts/Gordita-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
 .menu > li > a {
-  font-size: 1.125rem;
-  color: #1a202c;
-  font-weight: 600;
+  font-size: 16px;
+  color: #3e3f41;
+  font-weight: 550;
   padding: 15px 22px;
-  text-transform: uppercase;
- 
+  font-family: 'Gordita ';
+  text-transform: capitalize;
+}
+.account-form .form-group .checkgroup input[type=checkbox] {
+  width: 18px;
+  height: 18px;
+  margin-right: 15px;
+  border: none;
+  box-shadow: none;
+  outline: none;
+  accent-color: #ffffff;
 }
 p {
-  color: #656566;
+  color: #718096;
+  font-family: 'Gordita ';
 }
 .card {
   position: relative;
@@ -44,10 +67,11 @@ p {
   margin-right: .5rem!important;
 }
 
-
 h2 {
   font-size: 2.75rem;
-   color: #1a202c;;
+  color: #00234f;
+  font-family: 'Gordita ';
+  font-weight: bolder;
 }
 .account-form .form-group input {
   -webkit-transition: all 0.3s ease;
@@ -58,30 +82,92 @@ h2 {
   border: 1px solid lightgray;
   border-radius: 4px;
   padding: 5px 20px;
-  color: #a7a5a5 !important;
+  color: #00234f !important;
+  font-weight: 600;
   background-color: #ffffff !important;
   /* border: none; */
   line-height: 50px;
   /* border: 1px solid transparent; */
+  font-family: 'Gordita ';
+}
+
+.default-btn {
+  font-size: 1rem;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-transform: skew(-5deg);
+  -moz-transform: skew(-5deg);
+  -ms-transform: skew(-5deg);
+  -o-transform: skew(-5deg);
+  transform: skew(-5deg);
+  text-decoration: none;
+  font-family: "Gordita ";
+  color: #ffffff;
+  padding-inline: 1.25rem;
+  line-height: 40px;
+  transform-origin: right;
+  transition: all 0.3s ease;
+  background: #00234f;
+  border: 1px solid transparent;
+  font-weight: 600;
+}
+.header-wrapper .menu-area .wallet-btn {
+  width: auto;
+  height: auto;
+  background-color: #00234f;
+  color: #ffffff;
+  display: inherit;
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+}
+
+button.default-btn:hover {
+  color: #00234f;
+  border: 1px solid #00234f;
+}
+.account-wrapper .cate a {
+  font-weight: 600;
+  color: #00234f;
+}
+.account-wrapper .cate a:hover {
+  font-weight: 600;
+  color: #00234f;
+}
+input.btn.btn-primary.px-4 {
+  background-color: #00234f !important;
+  color: white !important;
 }
 .account-form .form-group .checkgroup label {
   margin: 0;
   color: #1a202c !important;
 }
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-  color:    rgb(53, 49, 53) !important;
+  color:     rgb(122, 122, 122) !important;
+  font-family: "Gordita ";
+  font-weight: 500;
   
 }
 
 
 
 ::-ms-input-placeholder { /* Microsoft Edge */
- color:    rgb(53, 49, 53) !important;
+ color:    rgb(122, 122, 122) !important;
+ font-family: "Gordita ";
+  font-weight: 500;
  
+}
+input.form-control {
+  height: 55px;
+  font-family: 'Gordita ';
 }
 
 ::input-placeholder { /* Most modern browsers support this now. */
- color:    rgb(53, 49, 53) !important;
+ color:     rgb(122, 122, 122) !important;
+ font-family: "Gordita ";
+  font-weight: 500;
  
 }
 .account-wrapper {
@@ -97,8 +183,8 @@ body {
     color: #C1C7CB;
     font-size: 1rem;
     line-height: 1.625;
-    font-family: "Roboto", sans-serif;
-    background-color: #756ae7;
+    font-family: "Gordita ";
+    background-color: #ffffff;
 }
 .header-bar span {
   height: 3px;
@@ -118,6 +204,7 @@ img {
 .header-section {
   z-index: 99;
   background: white;
+  border-bottom: 1px solid lightgray;
 }
 
 
@@ -136,14 +223,20 @@ img {
 }
 h6.mb-0 {
   color: #28292a;
+  font-family: 'Gordita ';
+  font-weight: 600;
+  font-size: 17px;
+  margin-top: 15px;
 }
 .bg-primary {
   --bs-bg-opacity: 1;
   /* background-color: rgba(var(--bs-primary-rgb),var(--bs-bg-opacity))!important; */
-  background-color: #28dbd1 !important;
+  background-color: #00234f !important;
 }
 h4 {
   color: #28292a;
+  font-family: 'Gordita ';
+  font-weight: bolder;
 }
 input.form-control {
   height: 55px;

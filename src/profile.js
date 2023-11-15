@@ -64,6 +64,14 @@ const profile = () => {
 									<input type="text" className="form-control" value="Bay Area, San Francisco, CA"/>
 								</div>
 							</div>
+							<div className="row mb-3">
+								<div className="col-sm-3">
+									<h6 className="mb-0">Referral Link</h6>
+								</div>
+								<div className="col-sm-9 text-secondary">
+									<input type="text" className="form-control" value="referrals/referral-url-generator"/>
+								</div>
+							</div>
 							<div className="row">
 								<div className="col-sm-3"></div>
 								<div className="col-sm-9 text-secondary">
