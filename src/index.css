@@ -266,5 +266,24 @@ input.btn.btn-primary.px-4 {
 }
 
 
-
+/* @media only screen and (min-width: 992px) {
+  .menu > li > a {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 550;
+    padding: 15px 22px;
+    font-family: 'Gordita ';
+    text-transform: capitalize;
+  }
+} */
  
+@media only screen and (max-width: 768px) {
+  .menu > li > a {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 550;
+    padding: 15px 22px;
+    font-family: 'Gordita ';
+    text-transform: capitalize;
+  }
+}

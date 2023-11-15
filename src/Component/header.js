@@ -48,11 +48,7 @@ const HeaderComponent = () => {
                                 
                             </ul>
                             
-                            <a className="wallet-btn" data-bs-toggle="modal" data-bs-target="#wallet-option">
                             
-                              <span >
-                              Contact
-                              </span> <i className='fas fa-solid fa-wallet'></i></a>
 
                             
                             <div className={isOpen? "active  header-bar d-lg-none" : "header-bar d-lg-none"} onClick={() => setIsOpen(!isOpen)}>
